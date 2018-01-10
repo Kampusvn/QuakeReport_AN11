@@ -15,16 +15,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ListView listView = findViewById(R.id.listView);
 
-        ArrayList<String> objects = new ArrayList<>();
-        objects.add("Ha Dong");
-        objects.add("Hoa Binh");
-        objects.add("Nghe An");
-        objects.add("Hai Duong");
-        objects.add("Ha Tinh");
-        objects.add("Nha Trang");
-        objects.add("Bac Giang");
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Ha Dong");
+        list.add("Hoa Binh");
+        list.add("Nghe An");
+        list.add("Hai Duong");
+        list.add("Ha Tinh");
+        list.add("Nha Trang");
+        list.add("Bac Giang");
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, objects);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
     }
 }
